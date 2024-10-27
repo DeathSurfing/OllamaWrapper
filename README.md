@@ -1,6 +1,6 @@
 # Ollama Wrapper
 
-This is a Python wrapper for interacting with the [Ollama](https://ollama.com) API, allowing you to seamlessly integrate Ollama's capabilities into your applications. The wrapper requires you to have Ollama running locally on your computer.
+This is a Ollama wrapper for interacting with the [Ollama](https://ollama.com) API, allowing you to seamlessly integrate Ollama's capabilities into your applications. The wrapper requires you to have Ollama running locally on your computer.
 
 ## Prerequisites
 
@@ -13,45 +13,7 @@ This is a Python wrapper for interacting with the [Ollama](https://ollama.com) A
    ollama start
    ```
 
-3. **Python Dependencies**  
-   This project requires Python 3.6+ and some additional packages. Install the dependencies by running:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Installation
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/YourUsername/ollama-wrapper.git
-   cd ollama-wrapper
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
-Here’s a simple example of how to use the wrapper:
-
-```python
-from ollama_wrapper import OllamaClient
-
-# Initialize the client
-client = OllamaClient(base_url="http://localhost:8000")
-
-# Example request
-response = client.get_response(prompt="Hello, Ollama!")
-print(response)
-```
-
-> **Note:** Ensure that Ollama is running on `http://localhost:8000`. Adjust the `base_url` if your setup uses a different port.
-
-## Configuration
-
-You can configure the wrapper by editing `config.py` or passing parameters directly to the `OllamaClient` instance.
+> **Note:** Ensure that Ollama is running on `http://localhost:11432`. Adjust the `base_url` if your setup uses a different port.
 
 ## Features
 
